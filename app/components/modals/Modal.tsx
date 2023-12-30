@@ -58,7 +58,17 @@ const Modal: React.FC<ModalProps> = ({
     <>
       <div
         className="
-      fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden bg-neutral-800/70 outline-none focus:outline-none"
+      fixed
+      inset-0
+      z-50
+      flex
+      items-center
+      justify-center
+      overflow-y-auto
+      overflow-x-hidden
+    bg-neutral-800/70
+      outline-none
+      focus:outline-none"
       >
         <div
           className="
@@ -82,7 +92,6 @@ const Modal: React.FC<ModalProps> = ({
             duration-300
             ${showModal ? "translate-y-0" : "translate-y-full"}
             ${showModal ? "opacity-100" : "opacity-0"}
-
 `}
           >
             <div
@@ -112,19 +121,17 @@ const Modal: React.FC<ModalProps> = ({
                 items-center
                 justify-center
                 rounded-t
-                p-6
-                "
+                p-6"
               >
                 <button
                   onClick={onClose}
                   className="
-                  absolute
-                  left-9
-                  border-0
-                  p-1
-                  transition
-                  hover:opacity-70
-                  "
+                absolute
+                left-9
+                border-0
+                p-1
+                transition
+                hover:opacity-70"
                 >
                   <IoMdClose size={18} />
                 </button>
@@ -150,14 +157,13 @@ const Modal: React.FC<ModalProps> = ({
                       onClick={handleSecondaryAction}
                     />
                   )}
-
                   <Button
                     diasbled={disabled}
                     label={actionLabel}
                     onClick={handleSubmit}
                   />
                 </div>
-                {footer}
+                      {footer}
               </div>
             </div>
           </div>
