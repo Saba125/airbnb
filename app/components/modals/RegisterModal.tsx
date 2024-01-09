@@ -67,6 +67,7 @@ const RegisterModal = () => {
         required
         type="password"
       />
+     
     </div>
   );
   const toggle = useCallback(() => {

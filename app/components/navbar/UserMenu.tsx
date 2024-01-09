@@ -12,6 +12,7 @@ interface UserMenuProps {
   currentUser?: SafeUser | null;
 }
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
+  //? Zustand stores
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const rentModal = useRentalModal();
@@ -72,5 +73,4 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
     </div>
   );
 };
-
 export default UserMenu;

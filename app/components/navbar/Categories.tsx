@@ -93,10 +93,7 @@ export const categories = [
 const Categories = () => {
   const params = useSearchParams();
   const category = params.get("category");
-  console.log(category);
   const pathname = usePathname();
-  console.log(pathname);
-
   const isMainPage = pathname === "/";
   if (!isMainPage) {
     return null;
@@ -123,7 +120,6 @@ const Categories = () => {
         ))}
       </div>
     </Container>
-  );
-};
-
+  )
+}
 export default Categories;
