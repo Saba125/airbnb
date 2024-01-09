@@ -60,3 +60,6 @@ export default NextAuth({
   },
   secret: process.env.NEXTAUTH_SECRET,
 });
+
+// This line below is not required in this specific context, but make sure it's not there.
+// export { default as GET, default as POST } from "path/to/some/other/file";
